@@ -1,17 +1,8 @@
 import axios from "axios";
 import { getToken } from "./auth.js";
 
-const payload = {
-  companyName: "Train Agency",
-  clientID: "a3826a5d-d4cb-4c4c-8889-dcf6f88d8bfb",
-  clientSecret: "pWeUtPasreIPHFsG", //I am not using .env as it needs to screened by the hiring team
-  ownerName: "My Name",
-  ownerEmail: "124003153@sastra.ac.in",
-  rollNo: "124003153",
-};
-
 async function fetchTrains() {
-  const AUTH_TOKEN = await getToken(payload);
+  const AUTH_TOKEN = await getToken();
   try {
     const headers = {
       Authorization: `Bearer ${AUTH_TOKEN}`,

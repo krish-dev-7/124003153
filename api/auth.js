@@ -8,8 +8,7 @@ const payload = {
   ownerEmail: "124003153@sastra.ac.in",
   rollNo: "124003153",
 };
-let auth_token = "";
-async function getToken(payload) {
+async function getToken() {
   try {
     const resp = await axios.post("http://20.244.56.144/train/auth", payload);
     const tok = resp.data.access_token;

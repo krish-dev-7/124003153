@@ -13,4 +13,4 @@ Content-Type: application/json
 
 
 ###(get all trains)
-GET 
+GET http://localhost:8000
