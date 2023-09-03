@@ -19,8 +19,5 @@ async function getToken(payload) {
     throw error;
   }
 }
-setInterval(async () => {
-  auth_token = await getToken(payload);
-}, 50000);
 
 export { getToken };
