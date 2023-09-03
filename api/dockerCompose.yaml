@@ -1,0 +1,22 @@
+version: "3"
+
+services:
+  auth:
+    image: auth:latest
+    build: .
+    ports:
+      - "8000:8001"
+
+    networks:
+      - backend
+  trainApp:
+    image: trainApp:latest
+    build: .
+    ports:
+      - "8000:8000"
+    networks:
+      - backend
+
+networks:
+  backend:
+    driver: bridge

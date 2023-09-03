@@ -1,0 +1,16 @@
+###(auth)
+POST http://20.244.56.144/train/auth
+Content-Type: application/json
+
+{
+    "companyName": "Train Agency",
+    "clientID": "a3826a5d-d4cb-4c4c-8889-dcf6f88d8bfb",
+    "clientSecret": "pWeUtPasreIPHFsG",
+    "ownerName": "My Name",
+    "ownerEmail": "124003153@sastra.ac.in",
+    "rollNo": "124003153"
+}
+
+
+###(get all trains)
+GET 
